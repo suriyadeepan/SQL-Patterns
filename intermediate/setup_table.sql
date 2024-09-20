@@ -53,5 +53,21 @@ VALUES
 (2017, 'Red Delicious', 1500, 76.50, '2017-07-18', 51.45, '2017-07-30'),
 (2016, 'Red Delicious', 1500, 72.00, '2016-06-26', 47.60, '2016-06-23');
 
-
+create table AppleSales
+	(CustomerName varchar(255),
+    Variety varchar(255),
+    DateOfSell date,
+    TonsSold INT,
+    TonPrice decimal(20, 2),
+    DeliveryDate date,
+    StartingFreeze datetime
+    );
+    
+INSERT INTO AppleSales (CustomerName, Variety, DateOfSell, TonsSold, TonPrice, DeliveryDate, StartingFreeze)
+VALUES
+('SMart', 'Red Delicious', '2020-02-23', 60.00, 54.56, '2020-02-28', '2020-01-08 10:00'),
+('JB', 'Red Globus', '2020-03-02', 35.00, 61.50, '2020-03-12', '2020-01-15 09:30'),
+('JB', 'Magic Green', '2020-04-13', 15.00, 58.50, '2020-04-22', '2020-01-07 08:23'),
+('SMart', 'Red Globus', '2020-05-21', 100.00, 61.00, '2020-05-28', '2020-01-15 09:30'),
+('SMart', 'Red Delicious', '2020-05-21', 90.00, 54.56, '2020-05-30', '2020-01-08 10:00');
 
